@@ -53,6 +53,7 @@ public class SampleWebSocketsApplication extends SpringBootServletInitializer im
 	}
 
 	public static void main(String[] args) {
+		// inicio
 		SpringApplication.run(SampleWebSocketsApplication.class, args);
 	}
 
