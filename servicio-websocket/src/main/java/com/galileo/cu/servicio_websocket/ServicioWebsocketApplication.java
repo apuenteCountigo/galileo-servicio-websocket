@@ -3,8 +3,10 @@ package com.galileo.cu.servicio_websocket;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
 
 @SpringBootApplication
+@EnableWebSocketMessageBroker
 public class ServicioWebsocketApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
