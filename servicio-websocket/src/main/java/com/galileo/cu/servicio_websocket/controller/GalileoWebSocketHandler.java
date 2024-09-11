@@ -22,6 +22,12 @@ public class GalileoWebSocketHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         log.info("Conexión establecida con el cliente: " + session.getId());
+        ErrorMessage ErrMsg = new ErrorMessage();
+        ErrMsg.setScreenName("SessionID");
+        ErrMsg.setStatus("222");
+        ErrMsg.setMessage(session.getId());
+        String idSend = objectMapper.writeValueAsString(ErrMsg);
+        session.sendMessage(new TextMessage(idSend));
     }
 
     @Override
