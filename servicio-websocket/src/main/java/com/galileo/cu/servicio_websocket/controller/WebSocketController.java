@@ -1,16 +1,16 @@
-package com.galileo.cu.servicio_websocket.controller;
+// package com.galileo.cu.servicio_websocket.controller;
 
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.stereotype.Controller;
+// import org.springframework.messaging.handler.annotation.MessageMapping;
+// import org.springframework.stereotype.Controller;
 
-import lombok.extern.slf4j.Slf4j;
+// import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
-@Controller
-public class WebSocketController {
+// @Slf4j
+// @Controller
+// public class WebSocketController {
 
-    @MessageMapping("/toBackend")
-    public void getMessage(Message message) {
-        log.info(":::::Mensaje::: " + message);
-    }
-}
+// @MessageMapping("/toBackend")
+// public void getMessage(MessageMapping message) {
+// log.info(":::::Mensaje::: " + message);
+// }
+// }
